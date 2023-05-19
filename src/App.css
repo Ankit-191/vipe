@@ -1,38 +1,255 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --fs-sm: 14px;
+  --fs-base: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 20px;
+  --fs-2xl: 24px;
+  --fs-3lg: 35px;
+  --fs-3xl: 36px;
+  --fs-4xl: 40px;
+  --fs-5xl: 48px;
+  --fs-7xl: 72px;
+  --clr-F6F6F6: #f6f6f6;
+  --clr-868687: #868687;
+  --clr-6022EA: #6022ea;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.clr_6022EA {
+  color: var(--clr-6022EA);
+}
+.clr_868687 {
+  color: var(--clr-868687);
+}
+.bg_F6F6F6 {
+  background-color: var(--clr-F6F6F6);
+}
+.fs_sm{
+  font-size: var(--fs-sm);
+}
+.fs_5xl {
+  font-size: var(--fs-5xl);
+}
+.fs_4xl {
+  font-size: var(--fs-4xl);
+}
+.fs_3lg {
+  font-size: var(--fs-3lg);
+}
+.fs_2xl {
+  font-size: var(--fs-2xl);
+}
+.fs_base {
+  font-size: var(--fs-base);
+}
+.fw_400 {
+  font-weight: 400;
+}
+.fw_600 {
+  font-weight: 600;
+}
+.fw_700 {
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Konexy Personal Use";
+  src: url(./assets//font-family/KonexyPersonalUse.otf);
+}
+.ff_konexy {
+  font-family: "Konexy Personal Use";
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(./assets/font-family/Gilroy-Bold.ttf);
+  src: url(./assets/font-family/Gilroy-Heavy.ttf);
+  src: url(./assets/font-family/Gilroy-Light.ttf);
+  src: url(./assets/font-family/Gilroy-Medium.ttf);
+  src: url(./assets/font-family/Gilroy-Regular.ttf);
+}
+.ff_gilroy {
+  font-family: "Gilroy";
+}
+.ff_inter {
+  font-family: "Inter";
+}
+.click::before {
+  content: url("./assets/image/svg/click.svg");
+  position: relative;
+  top: 3px;
+  left: -10px;
+}
+.yes::before {
+  content: url("./assets/image/svg/yes.svg");
+  position: relative;
+  left: -10px;
+  top: 1px;
+}
+.aftershadow::after {
+  content: "";
+  height: 200px;
+  width: 250px;
+  background: linear-gradient(#fa00ff, #6022ea);
+  filter: blur(100px);
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+  z-index: -1;
+}
+.arrows_before::before{
+  content: url("./assets/image/svg/arrow.svg");
+  padding-right: 7px;
+}
+.schedulebox {
+  position: relative;
+  z-index: 1;
+}
+.beforeshadow::before {
+  content: "";
+  height: 200px;
+  width: 250px;
+  background: linear-gradient(#6022ea, #fa00ff);
+  filter: blur(100px);
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  z-index: -1;
+}
+span {
+  opacity: 0;
+}
+span:nth-child(1) {
+  animation: fade-in 1s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(2) {
+  animation: fade-in 1s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(3) {
+  animation: fade-in 1s 2.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(4) {
+  animation: fade-in 1s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn_schedule {
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+  background: #6022ea;
+  border-radius: 80px;
+  border: none;
+  padding: 10px 24px;
+  transition: all 0.3s linear;
+}
+.PPC {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  /* box-shadow: 12.1143px 48.4571px 60.5714px rgba(229, 233, 246, 0.4); */
+  border-radius: 16px;
+  padding: 15px 14px;
+  transition: all 0.3s linear;
+}
+.PPC:hover {
+  box-shadow: 2px 2px 15px gray;
+}
+.crsor {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.crsor:hover {
+  opacity: 0.7;
+}
+.btn_schedule:hover {
+  background-color: #fa00ff;
+}
+.boder_r {
+  border-radius: 25px;
+}
+.imgshadow {
+  border-radius: 24px;
+  transition: all 0.3s linear;
+}
+.imgshadow:hover {
+  box-shadow: 7px 7px 50px gray;
+}
+.btn_category {
+  padding: 8px 16px;
+  color: #6022ea;
+  background-color: white;
+  border: 1px solid #6022ea;
+  border-radius: 80px;
+  transition: all 0.3s linear;
+}
+.btn_category:hover {
+  background-color: #6022ea !important;
+  color: white !important;
+}
+.btncategory_first button:nth-child(1) {
+  background-color: #6022ea;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.check_out {
+  background: linear-gradient(91.39deg, #5f21e9 60.06%, #fa00ff 103.73%);
+  box-shadow: 0px 20px 50px rgba(39, 0, 124, 0.5);
+  border-radius: 17px;
+  padding: 25px 52px 45px 43px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn_checkout{
+  border: none;
+  background-color: white;
+  padding: 14px 38px;
+  transition: all 0.3s linear;
+}
+.searchbar{
+  outline: none;
+  padding: 10px 0 10px 21px;
+}
+.btn_checkout:hover{
+  background-color: #5f21e9;
+  color: white;
+}
+@media (max-width: 576px) {
+  :root {
+    --fs-base: 14px;
+    --fs-2xl: 20px;
+    --fs-3lg: 25px;
+    --fs-3xl: 36px;
+    --fs-4xl: 25px;
+    --fs-5xl: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  .btn_schedule {
+    padding: 8px 15px;
+  }
+  .w_100 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .teamfullimg {
+    top: 93px;
+  }
+  .height_100px {
+    height: 100px;
+  }
+  .w_100 {
+    width: 100%;
+  }
+  .position_relative{
+    position: relative;
+    top: -150px;
+  }
+  .w_381px{
+    width: 381px;
   }
 }
