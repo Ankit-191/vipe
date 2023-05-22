@@ -17,14 +17,27 @@ const Succes = () => {
   ];
   return (
     <>
-      <section>
+      <section className="overflow-hidden">
         <div className="height_100px d-none d-lg-block"></div>
         <Container className="py-lg-5 my-5">
           <Row className="my-5 pb-4 align-items-center">
-            <Col lg={3} xl={4}>
+            <Col
+              lg={3}
+              xl={4}
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="800"
+            >
               <img src={success} alt="" className="w_100" />
             </Col>
-            <Col lg={9} xl={8} className="mt-4 mt-lg-0">
+            <Col
+              lg={9}
+              xl={8}
+              className="mt-4 mt-lg-0"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="800"
+            >
               <p className="ff_gilroy fw_400 fs_base clr_868687 mb-0">
                 HAVE YOU SEEN OUR MASCOT?
               </p>
@@ -48,7 +61,14 @@ const Succes = () => {
               <Row className="mt-4">
                 {vipeppc.map((PPC) => {
                   return (
-                    <Col sm={6} md={4} key={PPC.id}>
+                    <Col
+                      sm={6}
+                      md={4}
+                      key={PPC.id}
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="1500"
+                    >
                       <div className="PPC mt-3">
                         <img src={ppc} alt="vipe PCP" className="w-100" />
                         <p className="ff_gilroy fw_600 fs_2xl text-black mt-3 mb-2">
@@ -58,7 +78,7 @@ const Succes = () => {
                           Arcu amet, consectetur vel pellentesque mattis ipsum
                           sed mattis sed.
                         </p>
-                        <p className="ff_gilroy fw_600 fs_base clr_6022EA">
+                        <p className="ff_gilroy fw_600 fs_base clr_6022EA crsor">
                           Read More....
                         </p>
                       </div>
@@ -69,7 +89,7 @@ const Succes = () => {
             </Col>
           </Row>
         </Container>
-        <div className="height_100px d-none d-lg-block"></div>
+        <div className="height_101px"></div>
       </section>
     </>
   );

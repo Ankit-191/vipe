@@ -6,7 +6,7 @@ const Teamfull = () => {
   return (
     <>
       <section className="bg_F6F6F6">
-        <Container className="">
+        <Container>
           <Row className="align-items-center py-lg-0 py-4">
             <Col lg={6}>
               <p

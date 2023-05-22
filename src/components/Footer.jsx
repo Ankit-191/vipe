@@ -5,29 +5,34 @@ import logo from "../assets/image/png/vipelogo.png";
 const Footer = () => {
   return (
     <>
-      <section className="bg-black py-5 py-lg-0">
-        <Container>
-          <div className="check_out d-lg-flex justify-content-between mb-4 mb-lg-0 align-items-center position_relative">
+      <section className="bg-black">
+        <Container className="pb-5">
+          <div className="check_out d-lg-flex justify-content-between align-items-center translateY">
             <div>
               <p className="ff_konexy fw_400 fs_5xl text-white mb-2">
                 Have you
               </p>
               <p className="ff_gilroy fw_600 fs_2xl text-white mb-0">
                 read our study about Speed and Performance in
-                <span className="d-lg-block">WordPress?</span>
+                <span className="d-lg-block"> WordPres?</span>
               </p>
             </div>
             <button className="ff_inter fw_600 fs_base clr_6022EA btn_checkout rounded-pill mt-lg-0 mt-2">
               Check It Out
             </button>
           </div>
-          <div className="d-sm-flex align-items-center justify-content-between ">
-            <img src={logo} alt="vipe" />
+          <div
+            className="d-sm-flex align-items-center justify-content-between "
+            data-aos="zoom-in-down"
+            data-aos-easing="linear"
+            data-aos-duration="1600"
+          >
+            <img src={logo} alt="vipe" className="crsor_pointer"/>
             <div className="bg-white rounded-pill pe-4 w_381px d-flex mt-3 mt-sm-0 justify-content-between align-items-center">
               <input
                 type="text"
                 placeholder="Search here...."
-                className="border-0 searchbar rounded-pill w-75"
+                className="border-0 searchbar footersearch rounded-pill w-75 ff_gilroy fw_400 fs_base clr_313131 opacity_7"
               />
               <svg
                 width="22"
@@ -47,74 +52,100 @@ const Footer = () => {
             </div>
           </div>
           <Row className="mt-lg-5 mt-4">
-            <Col sm={6} lg={3}>
+            <Col
+              sm={6}
+              lg={3}
+              data-aos="zoom-in-down"
+              data-aos-easing="linear"
+              data-aos-duration="400"
+            >
               <p className="ff_gilroy fw_400 fs_base text-white">Services</p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white crsor arrows_before mb-2 pb-1">
                 WordPress Development
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 WooCommerce Development
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 WordPress Maintenance
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 Speed Optimization
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 Dedicated WordPress Developer
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 Headless WordPress Development
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 White Label Development
               </p>
             </Col>
-            <Col sm={6} lg={3} className="mt-4">
+            <Col
+              sm={6}
+              lg={3}
+              className="mt-4"
+              data-aos="zoom-in-down"
+              data-aos-easing="linear"
+              data-aos-duration="800"
+            >
               <p className="ff_gilroy fw_400 fs_base text-white">Services</p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 WordPress Hosting
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 Custom WordPress Theme
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 Custom WordPress Plugins
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 PSD, XD, Figma to WordPress Conversion
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 CMS to WordPress
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white arrows_before mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white arrows_before mb-2 pb-1">
                 WordPress Malware Removal
               </p>
             </Col>
-            <Col sm={6} lg={3} className="mt-4">
+            <Col
+              sm={6}
+              lg={3}
+              className="mt-4"
+              data-aos="zoom-in-down"
+              data-aos-easing="linear"
+              data-aos-duration="1200"
+            >
               <p className="ff_gilroy fw_400 fs_base text-white">
                 Latest Articles
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white  mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white  mb-2 pb-1">
                 7 WordPress Plugins to Create an Effective Newsletter 03.01.2022
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white  mb-2 pb-1">
-                
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white  mb-2 pb-1">
                 What’s the Perfect Blog Post Length for Your WordPress Site’s
                 SEO? 02.01.2022
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white  mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white  mb-2 pb-1">
                 5 Reasons the Future of WordPress Is Headless 01.01.2022
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white  mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white  mb-2 pb-1">
                 Viptor Says: Vipe Studio’s WordPress Developers Wrap Up the
                 Amazingly Successful 2021 30.12.2021
               </p>
             </Col>
-            <Col sm={6} lg={3} className="mt-4">
+            <Col
+              sm={6}
+              lg={3}
+              className="mt-4"
+              data-aos="zoom-in-down"
+              data-aos-easing="linear"
+              data-aos-duration="1600"
+            >
               <p className="ff_gilroy fw_400 fs_base text-white">Contact</p>
-              <p className="ff_gilroy fw_400 fs_sm align-align-items-center d-flex gap-2 text-white  mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor align-align-items-center d-flex gap-2 text-white  mb-2 pb-1">
                 <svg
                   width="20"
                   height="20"
@@ -129,7 +160,7 @@ const Footer = () => {
                 </svg>
                 EU: +359 988 993 128
               </p>
-              <p className="ff_gilroy fw_400 fs_sm align-align-items-center d-flex gap-2 text-white  mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor align-align-items-center d-flex gap-2 text-white  mb-2 pb-1">
                 <svg
                   width="20"
                   height="20"
@@ -144,7 +175,7 @@ const Footer = () => {
                 </svg>
                 US: +1 (1 888) 266-6917
               </p>
-              <p className="ff_gilroy fw_400 fs_sm align-align-items-center d-flex gap-2 text-white  mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor align-align-items-center d-flex gap-2 text-white  mb-2 pb-1">
                 <svg
                   width="18"
                   height="16"
@@ -163,9 +194,8 @@ const Footer = () => {
                 </svg>
                 office@vipestudio.com
               </p>
-              <p className="ff_gilroy fw_400 fs_sm text-white align-align-items-center d-flex gap-2 mb-2 pb-1">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white align-align-items-center d-flex gap-2 mb-2 pb-1">
                 <svg
-                    
                   width="24"
                   height="19"
                   viewBox="0 0 24 19"
@@ -181,6 +211,147 @@ const Footer = () => {
               </p>
             </Col>
           </Row>
+        </Container>
+        <hr className="linefooter" />
+        <Container>
+          <div
+            className="d-md-flex align-items-center justify-content-between py-4"
+            data-aos="zoom-in-down"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+          >
+            <div className="y-2">
+              <p className="ff_gilroy fw_400 fs_sm crsor text-white mb-2">
+                © Vipe Studio 2016-2022
+              </p>
+              <a
+                href=""
+                className="ff_gilroy fw_400 fs_sm crsor lineafter text-white"
+              >
+                Privacy{" "}
+              </a>
+              <a
+                href=""
+                className="ff_gilroy fw_400 fs_sm crsor lineafter text-white"
+              >
+                Careers{" "}
+              </a>
+              <a
+                href=""
+                className="ff_gilroy fw_400 fs_sm crsor lineafter text-white"
+              >
+                Media{" "}
+              </a>
+              <a href="" className="ff_gilroy fw_400 fs_sm crsor text-white">
+                Client Area{" "}
+              </a>
+            </div>
+            <div className="d-flex gap-3 footericon mt-3 mt-md-0">
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <circle cx="20" cy="20.9219" r="20" fill="white" />
+                  <g clip-path="url(#clip0_3961_327)">
+                    <path
+                      d="M16.4223 29.003C16.4223 29.899 16.4323 30.756 16.4383 31.288C16.4395 31.4166 16.4807 31.5417 16.5564 31.6457C16.6321 31.7496 16.7383 31.8274 16.8603 31.868C18.9383 32.554 21.1773 32.586 23.2743 31.959L23.5663 31.872C23.7038 31.8309 23.8245 31.7467 23.9105 31.6319C23.9966 31.517 24.0435 31.3776 24.0443 31.234C24.0493 30.501 24.0613 29.217 24.0613 27.704C24.0613 26.332 23.5843 25.454 23.0303 24.997C26.4293 24.631 30.0003 23.387 30.0003 17.77C30.0003 16.16 29.4083 14.86 28.4343 13.836C28.5873 13.47 29.1223 11.97 28.2813 9.95804C28.2813 9.95804 27.0013 9.55504 24.0803 11.458C22.834 11.1272 21.5498 10.9611 20.2603 10.964C18.9623 10.964 17.6633 11.129 16.4413 11.458C13.5203 9.57204 12.2403 9.95804 12.2403 9.95804C11.4003 11.97 11.9343 13.47 12.0873 13.836C11.0674 14.8898 10.5046 16.3036 10.5213 17.77C10.5213 23.368 14.0733 24.63 17.4723 24.997C17.0333 25.363 16.6323 26.003 16.4993 26.954C15.6203 27.338 13.4243 27.96 12.0493 25.747C11.7633 25.307 10.9033 24.228 9.70033 24.247C8.42033 24.265 9.18433 24.942 9.72033 25.217C10.3683 25.564 11.1133 26.863 11.2853 27.284C11.5913 28.107 12.5843 29.68 16.4223 29.004V29.003Z"
+                      fill="black"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <circle cx="20" cy="20.9219" r="20" fill="white" />
+                  <path
+                    d="M12.5 14.9219C13.6046 14.9219 14.5 14.0264 14.5 12.9219C14.5 11.8173 13.6046 10.9219 12.5 10.9219C11.3954 10.9219 10.5 11.8173 10.5 12.9219C10.5 14.0264 11.3954 14.9219 12.5 14.9219Z"
+                    fill="black"
+                    stroke="black"
+                    stroke-width="0.0833333"
+                  />
+                  <path
+                    d="M10.5 17.9219H14.5V30.4219H10.5V17.9219ZM18.5 22.6719V30.4219H22V23.4219C22 22.1719 22.75 21.1719 24 21.1719C25.25 21.1719 26 22.4219 26 23.4219V30.4219H29.5V22.6719C29.5 21.1719 27.75 17.9219 24 17.9219C20.25 17.9219 18.5 21.1719 18.5 22.6719Z"
+                    fill="black"
+                    stroke="black"
+                    stroke-width="0.0833333"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <circle cx="20" cy="20.9219" r="20" fill="white" />
+                  <path
+                    d="M31.6425 13.859C30.8075 14.229 29.9105 14.479 28.9675 14.592C29.9405 14.0097 30.6685 13.0934 31.0155 12.014C30.1014 12.5569 29.1009 12.9391 28.0575 13.144C27.3559 12.3948 26.4266 11.8983 25.4138 11.7314C24.4011 11.5646 23.3616 11.7367 22.4568 12.2212C21.5519 12.7057 20.8323 13.4753 20.4097 14.4107C19.9871 15.346 19.8851 16.3947 20.1195 17.394C18.2672 17.3009 16.4552 16.8195 14.8009 15.9809C13.1467 15.1422 11.6874 13.9651 10.5175 12.526C10.1175 13.216 9.88752 14.016 9.88752 14.868C9.88708 15.6349 10.076 16.3902 10.4374 17.0667C10.7988 17.7432 11.3217 18.32 11.9595 18.746C11.2198 18.7224 10.4964 18.5225 9.84952 18.163V18.223C9.84945 19.2987 10.2216 20.3413 10.9027 21.174C11.5839 22.0066 12.5321 22.5779 13.5865 22.791C12.9003 22.9767 12.1809 23.004 11.4825 22.871C11.78 23.7966 12.3595 24.606 13.1399 25.1859C13.9203 25.7658 14.8624 26.0871 15.8345 26.105C14.1844 27.4004 12.1464 28.103 10.0485 28.1C9.6769 28.1001 9.3056 28.0784 8.93652 28.035C11.066 29.4041 13.5449 30.1308 16.0765 30.128C24.6465 30.128 29.3315 23.03 29.3315 16.874C29.3315 16.674 29.3265 16.472 29.3175 16.272C30.2288 15.6129 31.0154 14.7968 31.6405 13.862L31.6425 13.859Z"
+                    fill="black"
+                  />
+                </g>
+              </svg>
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <circle cx="20" cy="20.9219" r="20" fill="white" />
+                  <g clip-path="url(#clip0_3961_333)">
+                    <path
+                      d="M17.7701 31.9015V21.588H15.043V17.8747H17.7701V14.703C17.7701 12.2107 19.381 9.92188 23.0928 9.92188C24.5957 9.92188 25.707 10.066 25.707 10.066L25.6195 13.5336C25.6195 13.5336 24.4861 13.5225 23.2493 13.5225C21.9108 13.5225 21.6963 14.1394 21.6963 15.1632V17.8747H25.7259L25.5505 21.588H21.6963V31.9015H17.7701Z"
+                      fill="black"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <circle cx="20" cy="20.9219" r="20" fill="white" />
+                  <path
+                    d="M20.0001 17.7977C18.2798 17.7977 16.8759 19.2016 16.8759 20.9219C16.8759 22.6422 18.2798 24.0461 20.0001 24.0461C21.7204 24.0461 23.1243 22.6422 23.1243 20.9219C23.1243 19.2016 21.7204 17.7977 20.0001 17.7977ZM29.3704 20.9219C29.3704 19.6281 29.3821 18.3461 29.3095 17.0547C29.2368 15.5547 28.8946 14.2235 27.7978 13.1266C26.6985 12.0274 25.3696 11.6875 23.8696 11.6149C22.5759 11.5422 21.2939 11.5539 20.0025 11.5539C18.7087 11.5539 17.4267 11.5422 16.1353 11.6149C14.6353 11.6875 13.304 12.0297 12.2071 13.1266C11.1079 14.2258 10.7681 15.5547 10.6954 17.0547C10.6228 18.3485 10.6345 19.6305 10.6345 20.9219C10.6345 22.2133 10.6228 23.4977 10.6954 24.7891C10.7681 26.2891 11.1103 27.6203 12.2071 28.7172C13.3064 29.8164 14.6353 30.1563 16.1353 30.2289C17.429 30.3016 18.711 30.2899 20.0025 30.2899C21.2962 30.2899 22.5782 30.3016 23.8696 30.2289C25.3696 30.1563 26.7009 29.8141 27.7978 28.7172C28.897 27.618 29.2368 26.2891 29.3095 24.7891C29.3845 23.4977 29.3704 22.2156 29.3704 20.9219ZM20.0001 25.7289C17.34 25.7289 15.1931 23.582 15.1931 20.9219C15.1931 18.2617 17.34 16.1149 20.0001 16.1149C22.6603 16.1149 24.8071 18.2617 24.8071 20.9219C24.8071 23.582 22.6603 25.7289 20.0001 25.7289ZM25.004 17.0406C24.3829 17.0406 23.8814 16.5391 23.8814 15.918C23.8814 15.2969 24.3829 14.7953 25.004 14.7953C25.6251 14.7953 26.1267 15.2969 26.1267 15.918C26.1269 16.0655 26.0979 16.2115 26.0416 16.3478C25.9852 16.4841 25.9026 16.6079 25.7983 16.7122C25.694 16.8165 25.5701 16.8992 25.4339 16.9556C25.2976 17.0119 25.1515 17.0408 25.004 17.0406Z"
+                    fill="black"
+                  />
+                </g>
+              </svg>
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <circle cx="20" cy="20.9219" r="20" fill="white" />
+                  <path
+                    d="M27.891 16.7098C28.614 18.0323 28.992 19.5156 28.99 21.0228C28.9904 22.5961 28.5777 24.1418 27.7933 25.5056C27.0089 26.8693 25.8801 28.0032 24.52 28.7938L27.266 20.8548C27.779 19.5728 27.95 18.5458 27.95 17.6358C27.9504 17.3262 27.9307 17.0169 27.891 16.7098ZM21.24 16.7968C21.583 16.78 21.9252 16.7506 22.266 16.7088C22.751 16.6458 22.694 15.9338 22.21 15.9598C22.21 15.9598 20.747 16.0718 19.81 16.0718C18.923 16.0718 17.435 15.9468 17.435 15.9468C16.948 15.9228 16.885 16.6598 17.374 16.6848C17.374 16.6848 17.823 16.7368 18.312 16.7598L19.711 20.5978L17.736 26.4968L14.462 16.7728C14.8054 16.7556 15.1483 16.7279 15.49 16.6898C15.977 16.6268 15.92 15.9148 15.435 15.9428C15.435 15.9428 13.98 16.0578 13.04 16.0578C12.873 16.0578 12.675 16.0508 12.465 16.0448C14.093 13.6478 16.862 12.0348 20 12.0348C22.341 12.0348 24.471 12.9288 26.071 14.3948C26.033 14.3928 25.995 14.3868 25.954 14.3868C25.071 14.3868 24.444 15.1568 24.444 15.9828C24.444 16.7238 24.871 17.3518 25.327 18.0908C25.67 18.6918 26.069 19.4608 26.069 20.5718C26.069 21.3348 25.774 22.2338 25.384 23.4708L24.488 26.4578L21.238 16.7828L21.24 16.7968ZM20 30.0088C19.1403 30.0097 18.2849 29.8871 17.46 29.6448L20.157 21.8068L22.92 29.3788C22.941 29.4228 22.962 29.4638 22.985 29.5028C22.0258 29.8392 21.0165 30.011 20 30.0108V30.0088ZM11.01 21.0228C11.0085 19.7623 11.2737 18.5157 11.788 17.3648L16.075 29.1138C14.5565 28.3765 13.2761 27.2267 12.3804 25.7958C11.4847 24.365 11.0098 22.7109 11.01 21.0228ZM20 11.0228C14.487 11.0228 10 15.5098 10 21.0228C10 26.5358 14.487 31.0228 20 31.0228C25.513 31.0228 30 26.5358 30 21.0228C30 15.5098 25.513 11.0228 20 11.0228Z"
+                    fill="black"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
         </Container>
       </section>
     </>
