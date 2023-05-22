@@ -369,6 +369,10 @@ span:nth-child(4) {
   font-weight: 600;
 }
 
+.z_1{
+  z-index: 1;
+}
+
 @media (min-width: 576px) {
   .w_537px {
     width: 350px;
@@ -394,15 +398,13 @@ span:nth-child(4) {
 }
 @media (max-width: 1200px) {
   .nav_md {
-    height: 100%;
     position: fixed;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
     top: 0;
     left: -100%;
     z-index: 10;
-    background: black;
+    background: green;
   }
   .left_0 {
     left: 0;

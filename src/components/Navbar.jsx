@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import logo from "../assets/image/png/vipelogo.png";
-import { FcMenu } from "react-icons/fc";
+import { IoIosMenu } from "react-icons/io";
 
 const Navbar = () => {
   const [first, setfirst] = useState(true);
@@ -15,14 +15,12 @@ const Navbar = () => {
   }
   return (
     <>
-      <section className="bg-black pt-3">
+      <section
+        className="bg-black pt-3 position-relative"
+        style={{ zIndex: 3 }}
+      >
         <Container>
-          <div
-            className="d-flex align-items-center justify-content-between"
-            data-aos="flip-up"
-            ata-aos-easing="linear"
-            data-aos-duration="900"
-          >
+          <div className="d-flex align-items-center justify-content-between">
             <div className="d-flex align-items-center gap-xxl-5">
               <img
                 src={logo}
@@ -31,7 +29,9 @@ const Navbar = () => {
               />
               <div
                 className={`d-flex align-items-center nav_md ${
-                  first ? "" : "justify-content-center left_0"
+                  first
+                    ? ""
+                    : "justify-content-center left_0 z_200 position-fixed"
                 }`}
               >
                 <ul className="d-flex flex-column flex-xl-row gap-xl-4 gap-2 mb-0 ">
@@ -155,8 +155,8 @@ const Navbar = () => {
               </div>
             </div>
             <div onClick={showUl} className="z_11 text-end">
-              <h3 className="d-block d-xl-none ">
-                <FcMenu />
+              <h3 className="d-block d-xl-none text-white">
+                <IoIosMenu />
               </h3>
             </div>
             <div className="d-flex gap-4 align-items-center d-none d-xl-inline-flex">

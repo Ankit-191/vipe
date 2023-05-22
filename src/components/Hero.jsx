@@ -7,15 +7,10 @@ import star from "../assets/image/png/start.png";
 const Hero = () => {
   return (
     <>
-      <section className="bg-black py-lg-5 overflow-hidden">
+      <section className="bg-black py-lg-5 overflow-hidden z_1">
         <Container className="pb-lg-5 mb-lg-5">
           <Row className="py-5 my-5 align-items-center">
-            <Col
-              lg={6}
-              data-aos="fade-up-right"
-              ata-aos-easing="linear"
-              data-aos-duration="600"
-            >
+            <Col lg={6} className=" ">
               <div>
                 <p className="ff_konexy fw_400 fs_7xl p_before text-white lh_106pre mb-4">
                   WordPress Development Agency
@@ -50,11 +45,7 @@ const Hero = () => {
                 </button>
               </div>
             </Col>
-            <Col
-              data-aos="fade-up-left"
-              ata-aos-easing="linear"
-              data-aos-duration="600"
-            >
+            <Col>
               <div className="imgshadow_after position-relative mt-4 mt-lg-0">
                 <div className="trustpilotbg position-absolute d-none d-sm-block">
                   <img
