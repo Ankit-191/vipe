@@ -155,14 +155,17 @@ const Navbar = () => {
               </div>
             </div>
             <div onClick={showUl} className="z_11 text-end">
-              <h3 className="d-block d-xl-none text-white">
+              <h1 className="d-block d-xl-none text-white fs_7xl">
                 <IoIosMenu />
-              </h3>
+              </h1>
             </div>
             <div className="d-flex gap-4 align-items-center d-none d-xl-inline-flex">
-              <p className="ff_gilroy fw_400 fs_base mt-3 text-white">
+              <a
+                href="tel:1 888 266-6917"
+                className="ff_gilroy fw_400 fs_base text-white"
+              >
                 1 888 266-6917 (eu?)
-              </p>
+              </a>
               <button className="ff_gilroy fw_600 fs_lg btn_contact border-0 rounded-pill text-white">
                 Contact Us
               </button>

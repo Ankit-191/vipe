@@ -27,7 +27,7 @@ const Footer = () => {
             data-aos-easing="linear"
             data-aos-duration="1600"
           >
-            <img src={logo} alt="vipe" className="crsor_pointer"/>
+            <img src={logo} alt="vipe" className="crsor_pointer" />
             <div className="bg-white rounded-pill pe-4 w_381px d-flex mt-3 mt-sm-0 justify-content-between align-items-center">
               <input
                 type="text"
@@ -145,7 +145,10 @@ const Footer = () => {
               data-aos-duration="1600"
             >
               <p className="ff_gilroy fw_400 fs_base text-white">Contact</p>
-              <p className="ff_gilroy fw_400 fs_sm crsor align-align-items-center d-flex gap-2 text-white  mb-2 pb-1">
+              <a
+                href="tel:+359 988 993 128"
+                className="ff_gilroy fw_400 fs_sm crsor align-align-items-center d-flex gap-2 text-white  mb-2 pb-1"
+              >
                 <svg
                   width="20"
                   height="20"
@@ -159,8 +162,11 @@ const Footer = () => {
                   />
                 </svg>
                 EU: +359 988 993 128
-              </p>
-              <p className="ff_gilroy fw_400 fs_sm crsor align-align-items-center d-flex gap-2 text-white  mb-2 pb-1">
+              </a>
+              <a
+                href="tel: +1 (1 888) 266-6917"
+                className="ff_gilroy fw_400 fs_sm crsor align-align-items-center d-flex gap-2 text-white  mb-2 pb-1"
+              >
                 <svg
                   width="20"
                   height="20"
@@ -174,8 +180,11 @@ const Footer = () => {
                   />
                 </svg>
                 US: +1 (1 888) 266-6917
-              </p>
-              <p className="ff_gilroy fw_400 fs_sm crsor align-align-items-center d-flex gap-2 text-white  mb-2 pb-1">
+              </a>
+              <a
+                href="mailto:office@vipestudio.com"
+                className="ff_gilroy fw_400 fs_sm crsor align-align-items-center d-flex gap-2 text-white  mb-2 pb-1"
+              >
                 <svg
                   width="18"
                   height="16"
@@ -193,7 +202,7 @@ const Footer = () => {
                   />
                 </svg>
                 office@vipestudio.com
-              </p>
+              </a>
               <p className="ff_gilroy fw_400 fs_sm crsor text-white align-align-items-center d-flex gap-2 mb-2 pb-1">
                 <svg
                   width="24"
@@ -228,22 +237,22 @@ const Footer = () => {
                 href=""
                 className="ff_gilroy fw_400 fs_sm crsor lineafter text-white"
               >
-                Privacy{" "}
+                Privacy
               </a>
               <a
                 href=""
                 className="ff_gilroy fw_400 fs_sm crsor lineafter text-white"
               >
-                Careers{" "}
+                Careers
               </a>
               <a
                 href=""
                 className="ff_gilroy fw_400 fs_sm crsor lineafter text-white"
               >
-                Media{" "}
+                Media
               </a>
               <a href="" className="ff_gilroy fw_400 fs_sm crsor text-white">
-                Client Area{" "}
+                Client Area
               </a>
             </div>
             <div className="d-flex gap-3 footericon mt-3 mt-md-0">

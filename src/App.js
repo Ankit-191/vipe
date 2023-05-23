@@ -9,9 +9,12 @@ import Succes from "./components/Succes";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Featuredon from "./components/Featuredon";
+import Integer from "./components/Integer";
+import Longtream from "./components/Longtream";
+import AgilewordPress from "./components/AgilewordPress";
 
 function App() {
   useEffect(() => {
@@ -21,8 +24,11 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Featuredon/>
+      <Featuredon />
+      <Integer />
       <Vipestudio />
+      <Longtream/>
+      <AgilewordPress/>
       <Teamfull />
       <Succes />
       <Footer />

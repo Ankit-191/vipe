@@ -95,7 +95,7 @@ const Hero = () => {
                 <div className="rounded-pill bg_searchbar pe-4 w_537px d-flex mt-3 mt-sm-0 justify-content-between align-items-center">
                   <input
                     type="text"
-                    placeholder="Search here...."
+                    placeholder="What do you need assistance with?		"
                     className="border-0 searchbar homesearch rounded-pill w-75 ff_gilroy fw_400 fs_base text-white"
                   />
                   <svg
